@@ -4,47 +4,54 @@
     <meta charset="UTF-8">
     <title>صدقة جارية</title>
     <style>
-        body { font-family: 'Amiri', serif; background-color: #fcfbf8; color: #333; margin: 0; padding: 20px; line-height: 2.2; }
+        body { font-family: 'Amiri', serif; background-color: #fcfbf8; color: #333; margin: 0; padding: 20px; line-height: 2; }
         .container { max-width: 800px; margin: auto; }
-        header { text-align: center; padding: 60px 0; border-bottom: 3px solid #c5a059; margin-bottom: 40px; }
-        h1 { color: #5d4037; font-size: 3em; }
-        .section-title { color: #5d4037; font-size: 1.8em; margin-top: 40px; border-right: 5px solid #c5a059; padding-right: 15px; }
-        .item { background: white; margin: 15px 0; padding: 20px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); cursor: pointer; border: 1px solid #eee; }
-        .item-header { font-weight: bold; color: #5d4037; font-size: 1.3em; display: flex; justify-content: space-between; }
-        .content { display: none; padding: 20px; background: #fffcf8; color: #444; font-size: 1.2em; border-top: 1px solid #eee; }
-        footer { text-align: center; padding: 60px; font-size: 1.4em; color: #5d4037; line-height: 1.8; }
+        header { text-align: center; padding: 40px 0; border-bottom: 3px solid #c5a059; margin-bottom: 30px; }
+        .section-title { color: #5d4037; font-size: 1.6em; margin-top: 30px; border-right: 5px solid #c5a059; padding-right: 10px; }
+        .item { background: white; margin: 10px 0; padding: 15px; border-radius: 8px; border: 1px solid #eee; cursor: pointer; }
+        .item-header { font-weight: bold; color: #5d4037; display: flex; justify-content: space-between; }
+        .content { display: none; padding: 15px; background: #fffcf8; color: #444; }
+        footer { text-align: center; padding: 40px; margin-top: 50px; border-top: 3px solid #c5a059; color: #5d4037; font-weight: bold; }
     </style>
 </head>
 <body>
 
 <div class="container">
-    <header>
-        <h1>صدقة جارية</h1>
-        <p>مكتبة شاملة للأذكار والأدعية الثابتة عن النبي ﷺ</p>
-    </header>
+    <header><h1>صدقة جارية</h1></header>
 
-    <!-- مثال للقسم (كرري هذا النمط للـ 30 والـ 50 دعاء) -->
+    <!-- الأذكار -->
     <h2 class="section-title">أذكار الصباح</h2>
     <div class="item" onclick="this.querySelector('.content').style.display=(this.querySelector('.content').style.display=='block'?'none':'block')">
         <div class="item-header"><span>1. آية الكرسي</span> <span>▼</span></div>
-        <div class="content">اللَّهُ لَا إِلَهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ... (ضعي هنا نص الآية كاملاً وهو طويل)</div>
+        <div class="content">اللَّهُ لَا إِلَهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ...</div>
     </div>
-    
-    <!-- كرري الـ item هنا 30 مرة -->
+    <!-- انسخي الـ item أعلاه 20 مرة هنا -->
+
+    <h2 class="section-title">أذكار المساء</h2>
+    <div class="item" onclick="this.querySelector('.content').style.display=(this.querySelector('.content').style.display=='block'?'none':'block')">
+        <div class="item-header"><span>1. ذكر المساء الأول</span> <span>▼</span></div>
+        <div class="content">نص الذكر هنا...</div>
+    </div>
+    <!-- انسخي الـ item أعلاه 20 مرة هنا -->
+
+    <h2 class="section-title">أذكار النوم</h2>
+    <div class="item" onclick="this.querySelector('.content').style.display=(this.querySelector('.content').style.display=='block'?'none':'block')">
+        <div class="item-header"><span>1. ذكر النوم الأول</span> <span>▼</span></div>
+        <div class="content">نص الذكر هنا...</div>
+    </div>
+    <!-- انسخي الـ item أعلاه 20 مرة هنا -->
 
     <h2 class="section-title">أدعية مختارة من السنة</h2>
     <div class="item" onclick="this.querySelector('.content').style.display=(this.querySelector('.content').style.display=='block'?'none':'block')">
         <div class="item-header"><span>1. دعاء الكرب</span> <span>▼</span></div>
-        <div class="content">لا إله إلا الله العظيم الحليم، لا إله إلا الله رب العرش العظيم... (ضعي هنا الدعاء كاملاً)</div>
+        <div class="content">لا إله إلا الله العظيم الحليم...</div>
     </div>
-
-    <!-- كرري الـ item هنا 50 مرة -->
+    <!-- انسخي الـ item أعلاه 50 مرة هنا -->
 
     <footer>
-        <p>اللهم اجعل هذا العمل صدقة جارية عني وعن والدي وعن كل من قرأه أو نشره.</p>
-        <p>رزقنا الله وإياكم الفردوس الأعلى من الجنة.</p>
+        <p>اللهم اجعل هذا العمل عني وعن والديّ وعن موتانا وموتى المسلمين.</p>
+        <p>وارزق جميع من نشره او ساهم في نشره بجنات النعيم وتقبل الله اجر الجميع.</p>
     </footer>
 </div>
-
 </body>
 </html>
